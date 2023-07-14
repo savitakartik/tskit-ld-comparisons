@@ -1,0 +1,17 @@
+PLINK v1.90b6.24 64-bit (6 Jun 2021)
+Options in effect:
+  --double-id
+  --out data/bed/ts_gene_biallelic_N10
+  --vcf data/vcf/ts_gene_biallelic_N10.vcf.gz
+  --vcf-half-call h
+
+Hostname: compute-dy-c518xlarge-14
+Working directory: /nfs_home/users/osvk/projects/tskit-ld
+Start time: Wed Jul 12 18:27:53 2023
+
+Random number seed: 1689179273
+140744 MB RAM detected; reserving 70372 MB for main workspace.
+--vcf: data/bed/ts_gene_biallelic_N10.bed + data/bed/ts_gene_biallelic_N10.bim
++ data/bed/ts_gene_biallelic_N10.fam written.
+
+End time: Wed Jul 12 18:27:53 2023
