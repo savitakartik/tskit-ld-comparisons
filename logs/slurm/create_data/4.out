@@ -1,0 +1,17 @@
+Wed Jul 12 18:40:05 CEST 2023
+Num of indivs: 10000
+PLINK v1.90b6.24 64-bit (6 Jun 2021)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2021 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to data/bed/ts_gene_biallelic_N10000.log.
+Options in effect:
+  --double-id
+  --out data/bed/ts_gene_biallelic_N10000
+  --vcf data/vcf/ts_gene_biallelic_N10000.vcf.gz
+  --vcf-half-call h
+
+70225 MB RAM detected; reserving 35112 MB for main workspace.
+--vcf: 1k variants complete.--vcf: 2k variants complete.--vcf: 3k variants complete.--vcf: 4k variants complete.--vcf: 5k variants complete.--vcf: 6k variants complete.--vcf: 7k variants complete.--vcf: 8k variants complete.--vcf: 9k variants complete.--vcf: 10k variants complete.--vcf: 11k variants complete.--vcf: 12k variants complete.--vcf: 13k variants complete.--vcf: 14k variants complete.--vcf: 15k variants complete.--vcf: 16k variants complete.--vcf: 17k variants complete.--vcf: 18k variants complete.--vcf: 19k variants complete.--vcf: 20k variants complete.--vcf: 21k variants complete.--vcf: 22k variants complete.--vcf: 23k variants complete.--vcf: 24k variants complete.--vcf: 25k variants complete.--vcf: 26k variants complete.--vcf: 27k variants complete.--vcf: 28k variants complete.--vcf: 29k variants complete.--vcf: 30k variants complete.--vcf: 31k variants complete.--vcf: 32k variants complete.--vcf: data/bed/ts_gene_biallelic_N10000.bed +
+data/bed/ts_gene_biallelic_N10000.bim + data/bed/ts_gene_biallelic_N10000.fam
+written.
+input args: num of indivs =10000
+Wed Jul 12 18:54:42 CEST 2023

@@ -1,0 +1,16 @@
+Wed Jul 12 18:26:32 CEST 2023
+Sample size: 10
+PLINK v1.90b6.24 64-bit (6 Jun 2021)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2021 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to data/bed/ts_gene_biallelic_N10.log.
+Options in effect:
+  --double-id
+  --out data/bed/ts_gene_biallelic_N10
+  --vcf data/vcf/ts_gene_biallelic_N10.vcf.gz
+  --vcf-half-call h
+
+140744 MB RAM detected; reserving 70372 MB for main workspace.
+--vcf: 1k variants complete.--vcf: 2k variants complete.--vcf: 3k variants complete.--vcf: data/bed/ts_gene_biallelic_N10.bed + data/bed/ts_gene_biallelic_N10.bim
++ data/bed/ts_gene_biallelic_N10.fam written.
+input args: num of indivs =10
+Wed Jul 12 18:27:53 CEST 2023

@@ -1,0 +1,3 @@
+num_samples,method,ld_window,ld_window_kb,time_taken
+50000,tskit,50,500,79.65052597699923
+50000,plink,50,500,35.58297624399984

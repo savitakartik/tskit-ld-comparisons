@@ -1,0 +1,18 @@
+Thu Jul 13 14:44:18 CEST 2023
+Sample size: 250000 and window size: 10
+PLINK v1.90b6.24 64-bit (6 Jun 2021)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2021 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to data/plink_ld/r2_array_method/N250000_win10.log.
+Options in effect:
+  --bfile data/bed/ts_gene_biallelic_N250000
+  --ld-window 10
+  --ld-window-kb 200
+  --ld-window-r2 0
+  --out data/plink_ld/r2_array_method/N250000_win10
+  --r2
+  --threads 1
+
+141752 MB RAM detected; reserving 70876 MB for main workspace.
+input args: num of indivs=250000 and window size=10
+num sites in input trees: 102280
+Thu Jul 13 14:49:16 CEST 2023

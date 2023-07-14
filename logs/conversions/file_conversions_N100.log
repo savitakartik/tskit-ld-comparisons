@@ -1,0 +1,3 @@
+Time to create and dump tree subset of 183 samples: 28.46 seconds
+Time to write VCF for 183 samples: 0.62 seconds
+Time to convert VCF to PLINK for data/vcf/ts_gene_biallelic_N100.vcf.gz: 0.23 seconds

@@ -1,0 +1,30 @@
+Thu Jul 13 14:50:37 CEST 2023
+Sample size: 100 and window size: 10
+PLINK v1.90b6.24 64-bit (6 Jun 2021)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2021 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to data/plink_ld/r2_array_method/win_kb_500/N100_win10.log.
+Options in effect:
+  --bfile data/bed/ts_gene_biallelic_N100
+  --ld-window 10
+  --ld-window-kb 500
+  --ld-window-r2 0
+  --out data/plink_ld/r2_array_method/win_kb_500/N100_win10
+  --r2
+  --threads 1
+
+141752 MB RAM detected; reserving 70876 MB for main workspace.
+5446 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+data/plink_ld/r2_array_method/win_kb_500/N100_win10.nosex .
+Using 1 thread.
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.89244.
+5446 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--r2 to data/plink_ld/r2_array_method/win_kb_500/N100_win10.ld ...
+0% [processing]writing]             done.
+input args: num of indivs=100 and window size=10
+num sites in input trees: 5446
+Thu Jul 13 14:50:41 CEST 2023
