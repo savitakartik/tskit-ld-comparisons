@@ -10,11 +10,13 @@ import pandas as pd
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--num_indivs", type=int)
 parser.add_argument("-w", "--win_size", type=int)
+parser.add_argument("-k", "--win_kb_size", type=int)
 
 args = parser.parse_args()
 num_indivs = args.num_indivs
 win_size = args.win_size
-win_kb_size = 500
+win_kb_size = args.win_kb_size
+
 print(f"input args: num of indivs={num_indivs} and window size={win_size}")
 log_file=f"logs/compute_times/r2_array_method/win_kb_{win_kb_size}/ld_calculation_times_N{num_indivs}_win{win_size}.csv"
 
@@ -38,15 +40,16 @@ def calc_ld_with_tskit(ts, ld_window, ld_window_kb, out_file=None):
     r2=[]
 
     for focal_site in range(ts_gene_biallelic.num_sites):
-        r2_fwd = ldcalc.r2_array(focal_site, direction=tskit.FORWARD, max_mutations=ld_window)
-        r2_rev = ldcalc.r2_array(focal_site, direction=tskit.REVERSE, max_mutations=ld_window)
+        r2_fwd = ldcalc.r2_array(focal_site, direction=tskit.FORWARD, max_mutations=ld_window-1, max_distance=ld_window_kb*1000)
+        #r2_rev = ldcalc.r2_array(focal_site, direction=tskit.REVERSE, max_mutations=ld_window-1)
         r2.append(np.round(r2_fwd,2))
-        r2.append(np.round(r2_rev,2))
-        focal_sites.append(np.repeat(focal_site,len(r2_fwd)+len(r2_rev)))
+        #r2.append(np.round(r2_rev,2))
+        #focal_sites.append(np.repeat(focal_site,len(r2_fwd)+len(r2_rev)))
+        focal_sites.append(np.repeat(focal_site,len(r2_fwd)))
         focal_target_sites_fwd=np.arange(focal_site+1, focal_site+1+len(r2_fwd))
         target_sites.append(focal_target_sites_fwd)
-        focal_target_sites_rev=np.arange(focal_site-1,focal_site-1-len(r2_rev),-1)
-        target_sites.append(focal_target_sites_rev)
+        #focal_target_sites_rev=np.arange(focal_site-1,focal_site-1-len(r2_rev),-1)
+        #target_sites.append(focal_target_sites_rev)
     target_sites=np.concatenate(target_sites)
     focal_sites=np.concatenate(focal_sites)
     focal_positions=np.take(sites_pos, focal_sites).astype(int).flatten()
